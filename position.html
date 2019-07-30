@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position</title>
+	<style type="text/css">
+		#btn{
+			/*position: static;*/
+			/*static does not affected by top, right , button, left,  it is bydefault beacme static*/
+			/*position: relative;*/
+			/*top property use for push our element form its actual position*/
+			/*top: 5px;*/
+			/*position: fixed;*/
+			/*fixed based on view port of browser*/
+			/*position:absolute*/
+			/*it works based on it's parent emelment*/
+
+
+		}
+		.pst_fx{
+			background-color: #247324;
+			padding: 20px;
+			position: fixed;
+			bottom: 0;
+			font-weight: bold;
+			right: 0;
+			border-radius: 10px;
+			color: #ffff;
+		}
+		.parent_div{
+			position: relative;
+			border: 1px solid;
+			/*padding: 20px;*/
+			height: 200px;
+		}
+		.child_div{
+			position: absolute;
+			border:1px solid;
+			right: 0;
+		}
+		.pst_sticky{
+			position: sticky;
+			top: 0;
+		}
+	</style>
+</head>
+<body>
+	<button id="btn">Submit</button>
+	<div class="pst_fx">This is fixed postition;</div>
+
+	<div class="parent_div">
+		<div class="child_div">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</p>
+		</div>
+	</div>
+	<div class="pst_sticky"> This is sticky</div>
+</body>
+</html>
